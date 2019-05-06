@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<collection>
+    <food>
+        <name>Biryani</name>
+    </food>
+    <food>
+        <name>Chapathi</name>
+    </food>
+</collection>

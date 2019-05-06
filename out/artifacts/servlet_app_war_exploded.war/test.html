@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript" >
+        $(document).ready(function(){
+            $.ajax({
+                type:"GET",
+                url: "data.xml",
+                dataType: "xml",
+                success: xmlParser
+            });
+        });
+
+        function xmlParser(xml)
+        {
+            $(xml).find("food").each(function() {
+               $("#container").append('<div class="food"><br/><div class="name">'
+                   + $(this).find("name").text() + '<br/>' + '</div></div>' );
+            });
+        }
+
+
+    </script>
+</head>
+<body>
+        <h1>in test page</h1>
+        <div id="container">
+
+        </div>
+</body>
+</html>

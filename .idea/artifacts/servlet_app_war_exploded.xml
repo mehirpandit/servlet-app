@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="servlet-app:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/servlet_app_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="servlet-app/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="servlet-app" />
+          <element id="library" level="application" name="jquery-3.4.1.min" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
